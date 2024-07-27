@@ -1,7 +1,7 @@
 # Required softwares
 
 * [FFmpeg](https://ffmpeg.org/download.html#build-windows)
-* [VirtualDub2](https://sourceforge.net/projects/vdfiltermod/) (optional).
+* [VirtualDub2](https://sourceforge.net/projects/vdfiltermod/) (optional)
 
 # Steps
 
@@ -16,7 +16,7 @@ It takes too long to create directly in 1 pass a GIF with optimized palette and 
 
 where
 - `-ss` seeks to the specified timestamp start, `-t` specifies the duration, `-to` defines the end of the segment
-For example, "-ss 60 -t 10" is equivalent to "ss 60 -to 70" to ut the input video from 60s to 70s.
+For example, `-ss 60 -t 10` is equivalent to `-ss 60 -to 70` to cut the input video from 60s to 70s.
 See [FFmpeg documentation](https://trac.ffmpeg.org/wiki/Seeking) for a reason to put seeking options after -i (basically, the seeking is more accurate and the timestamps in the subtitle file do not need to be changed).
 - `-vf` stands for video filters
 - `fps=10` changes the framerate to 10 frames per second
