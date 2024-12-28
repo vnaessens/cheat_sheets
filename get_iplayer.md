@@ -13,9 +13,10 @@
 
 `get_iplayer --ffmpeg E:\ffmpeg-4.1-win64-static\bin\ffmpeg.exe https://www.bbc.co.uk/events/evrj6q/play/ag2n6q/p08gjmtb --info --long`
 * Select best qualities using --tv-quality= or --radio-quality= depending on the program type :
+* Set attempts number in case of an invalid or incomplete fragment using --attempts NUMBER
 
-`get_iplayer --ffmpeg E:\ffmpeg-4.4.1-full_build\bin\ffmpeg.exe --tv-quality="fhd" --radio-quality="high" https://www.bbc.co.uk/iplayer/episode/p0c7bcgh/later-live-tracks-liam-gallagher-better-days-later-with-jools-holland`
+`get_iplayer --ffmpeg E:\ffmpeg-4.4.1-full_build\bin\ffmpeg.exe --tv-quality="fhd" --radio-quality="high" --attempts 10 -https://www.bbc.co.uk/iplayer/episode/p0c7bcgh/later-live-tracks-liam-gallagher-better-days-later-with-jools-holland`
 
-Other useful options : `--raw`, `--overwrite`
+Other useful options : `--raw`, `--overwrite`, `--force`
 
 **Update 03/07/2024** : Use yt-dlp : `yt-dlp.exe --ffmpeg-location E:\ffmpeg-7.0.1-full_build\bin --windows-filenames --merge-output-format "mp4/mkv" https://www.bbc.co.uk/iplayer/episode/p0j3kydm/glastonbury-kasabian`
