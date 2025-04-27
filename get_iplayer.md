@@ -19,4 +19,8 @@
 
 Other useful options : `--raw`, `--overwrite`, `--force`
 
-**Update 03/07/2024** : Use yt-dlp : `yt-dlp.exe --ffmpeg-location E:\ffmpeg-7.0.1-full_build\bin --windows-filenames --merge-output-format "mp4/mkv" https://www.bbc.co.uk/iplayer/episode/p0j3kydm/glastonbury-kasabian`
+**Update 03/07/2024** : Use yt-dlp.
+
+`yt-dlp.exe -F --list-subs https://www.bbc.co.uk/iplayer/episode/m001zqvz/close`
+
+`yt-dlp.exe --ffmpeg-location E:\ffmpeg-7.1.1-full_build\bin\ffmpeg.exe --windows-filenames --merge-output-format "mp4/mkv" --write-subs --sub-langs all --abort-on-unavailable-fragments https://www.bbc.co.uk/iplayer/episode/p0j3kydm/glastonbury-kasabian`
